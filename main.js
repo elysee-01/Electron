@@ -12,7 +12,8 @@ function run() {
   // fenettre principale
   win = new BrowserWindow({
     width: 252,
-    height: 425,
+    height: 400,
+    //height: 425,
     backgroundColor: "#eeeeff",
     resizable: false,
     center: true,
@@ -21,7 +22,8 @@ function run() {
     // parent: parentFrame,
     // modal: true,
   });
-
+  win.removeMenu();
+  win.setIcon("icon.png");
   win.loadFile("index.html");
 
   // Fermeture de la fenettre
