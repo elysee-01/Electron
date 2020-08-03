@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first electron App</title>
+
+    <style>
+        * {
+            margin: 0 !important;
+            padding: 0 !important;
+            box-sizing: border-box !important;
+            outline: none;
+        }
+
+        :root {
+            --c1: brown;
+            --f1: #402;
+            /* Utilisé */
+            --fo: #007bff;
+            --cl: linear-gradient(to left top, #caeeff, #007bff, #caeeff);
+            --cl2: linear-gradient(to right top, #fff, #eeeeff, #fff);
+        }
+
+        input:not([type="text"]) {
+            width: 50px;
+            height: 50px;
+            background: var(--cl);
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+            border: 3px solid var(--fo);
+            border-radius: 0 15px 0 15px;
+            transition: 0.3s;
+        }
+
+        table {
+            padding: 10px !important;
+            border: 2px solid var(--fo);
+            border-radius: 10px;
+            margin: 1px !important;
+            background: var(--cl2);
+        }
+
+        tr td {
+            width: 50px;
+            height: 50px;
+            padding: 5px 2px !important;
+        }
+
+        input:not([type="text"]):hover {
+            background: #fff;
+            border-style: dotted;
+            color: var(--fo);
+            transition: 0.3s;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border: 3px solid var(--fo);
+            border-radius: 0 15px 0 15px;
+            padding: 10px !important;
+            color: var(--fo);
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--cl);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="4"><input dir="auto" value="0" type="text" name="content" id="ecran" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="reset" value="C" /></td>
+                <td><input type="button" value="Del" /></td>
+                <td><input type="button" class="btn_insert" value="%" /></td>
+                <td><input type="button" class="btn_insert" value="÷" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn_insert" value="7" /></td>
+                <td><input type="button" class="btn_insert" value="8" /></td>
+                <td><input type="button" class="btn_insert" value="9" /></td>
+                <td><input type="button" class="btn_insert" value="x" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn_insert" value="4" /></td>
+                <td><input type="button" class="btn_insert" value="5" /></td>
+                <td><input type="button" class="btn_insert" value="6" /></td>
+                <td><input type="button" class="btn_insert" value="-" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn_insert" value="1" /></td>
+                <td><input type="button" class="btn_insert" value="2" /></td>
+                <td><input type="button" class="btn_insert" value="3" /></td>
+                <td><input type="button" class="btn_insert" value="+" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn_insert" value="0" /></td>
+                <td><input type="button" class="btn_insert" value="." /></td>
+                <td><input type="button" value="ANS" /></td>
+                <td><input type="button" id="egale" value="=" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

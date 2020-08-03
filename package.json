@@ -1,0 +1,24 @@
+{
+  "name": "webciel",
+  "version": "1.0.0",
+  "description": "my first electron app",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^9.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "electron .",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elysee-01/elect.git"
+  },
+  "author": "elysee-01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elysee-01/elect/issues"
+  },
+  "homepage": "https://github.com/elysee-01/elect#readme"
+}
